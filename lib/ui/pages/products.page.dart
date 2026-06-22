@@ -91,7 +91,7 @@ class ProductsPage extends ConsumerWidget {
                                 else
                                 TextButton(
                                   onPressed: () {
-                                    
+                                    ref.read(cardProvider.notifier).removeProduct(allProducts[index]);
                                   },
                                   child: Text("Remove From Card"),
                                 )

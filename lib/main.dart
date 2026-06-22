@@ -13,7 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(),
+      theme: ThemeData(
+        textTheme: TextTheme(
+          bodyMedium: TextStyle(fontSize: 18)
+        ),
+      ),
       routes: {},
       home: ProductsPage(),
     );
